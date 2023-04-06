@@ -9,7 +9,7 @@ This is a responsive Tic-Tac-Toe game written in Vanilla JavaScript, HTML and CS
 
 ## Run Locally
 
-Download .zip with all included files and folders, or clone the project:
+Download .zip with all included files and folders, or clone the project instead:
 
 ```bash
   git clone https://github.com/it-drafter/tic-tac-toe.git
