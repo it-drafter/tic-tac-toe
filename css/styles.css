@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('../gfx/fonts/baloo2-bold.ttf');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ff944a;
+    font-family: 'Baloo 2', serif;
+    background-image: url("../gfx/bg.svg");
+    background-repeat: no-repeat;
+    background-size: 300vh;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.grid-container{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    background-color: #500000;
+    padding: 5px;
+    /* ------------ */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grid-item{
+    background-color: #ffe4c4;
+    height: 95px;
+    width: 95px;
+}
+
+.grid-item > img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+.grid-item:hover{
+    background-color: #cdc4bc;
+}
+
+.easy-hard.flex-container{
+    justify-content: space-between;
+    padding: 5px 0;
+    margin: auto;
+    width: 305px;
+    max-width: 305px;
+}
+
+.easy-hard div{
+    padding: 5px 20px;
+    background-color: #ff944a;
+    border-radius: 15px;
+    border: 2px solid #500000;
+}
+
+.easy-hard div:first-child{
+    background-color: #eac39f;
+}
+
+.easy-hard div:hover{
+    color: #500000;
+    cursor: grab;
+}
+
+.winner, .newgame{
+    margin: 5px;
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: #ff944a;
+    border-radius: 15px;
+    border: 2px solid #500000;
+    width: 305px;
+    max-width: 305px;
+}
+
+.newgame:hover{
+    background-color: #eac39f;
+    cursor: grab;
+}
+
+.visible{
+    visibility: visible;
+}
+
+footer{
+    flex-direction: column;
+    background-color: #ff944a;
+    border: 2px solid #500000;
+    border-radius: 15px;
+    width: 305px;
+    max-width: 305px;
+    margin: 25px auto;
+    padding: 9px 5px 5px;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 576px) {
+
+    footer{
+        padding: 10px;
+        width: 270px;
+        max-width: 270px;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+
+    .easy-hard.flex-container{
+        width: 270px;
+        max-width: 270px;
+        margin-top: 30px;
+    }
+    
+    .winner.flex-container, .newgame.flex-container{
+        font-size: 2rem;
+        padding: 5px;
+        width: 270px;
+        max-width: 270px;
+    }
+
+    .grid-item{
+        height: 85px;
+        width: 85px;
+    }
+    
+}
