@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-This is a Tic-Tac-Toe game written in Vanilla JavaScript, HTML and CSS. No extra external libraries whatsoever.
+This is a responsive Tic-Tac-Toe game written in Vanilla JavaScript, HTML and CSS. No extra external libraries whatsoever.
 
 
 ## Demo
